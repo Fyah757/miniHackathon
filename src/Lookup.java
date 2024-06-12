@@ -39,7 +39,7 @@ public class Lookup {
                 String[] data = line.split(",");
                 String salesRepId = data[2];
                 Company company = new Company(
-                        Integer.parseInt(data[0]), // Index (optional)
+                        data[0], // Index (optional)
                         data[1],
                         salesRepId,
                         data[3], // Name
@@ -48,7 +48,7 @@ public class Lookup {
                         data[6], // Description
                         data[7], // Founded
                         data[8], // Industry
-                        Integer.parseInt(data[9])  // Number of employees
+                        data[9]  // Number of employees
                 );
                 companies.put(salesRepId, company);
             }

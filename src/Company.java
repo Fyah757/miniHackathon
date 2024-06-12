@@ -1,5 +1,5 @@
 public class Company {
-    private int index;
+    private String index;
     private String organizationId;
     private String salesRepId;
     private String name;
@@ -8,15 +8,15 @@ public class Company {
     private String description;
     private String founded;
     private String industry;
-    private int numberOfEmployees;
+    private String numberOfEmployees;
 
     public Company() {
     }
 
 
 
-    public Company (int index, String organizationId, String salesRepId, String name, String website, String country, String description,
-                    String founded, String industry, int numberOfEmployees){
+    public Company (String index, String organizationId, String salesRepId, String name, String website, String country, String description,
+                    String founded, String industry, String numberOfEmployees){
         this.index = index;
         this.organizationId = organizationId;
         this.salesRepId = salesRepId;
@@ -38,11 +38,11 @@ public class Company {
                 ", numberOfEmployees=" + numberOfEmployees +
                 '}';
     }
-    public int getIndex() {
+    public String getIndex() {
         return index;
     }
 
-    public void setIndex(int index) {
+    public void setIndex(String index) {
         this.index = index;
     }
 
@@ -110,11 +110,11 @@ public class Company {
         this.industry = industry;
     }
 
-    public int getNumberOfEmployees() {
+    public String getNumberOfEmployees() {
         return numberOfEmployees;
     }
 
-    public void setNumberOfEmployees(int numberOfEmployees) {
+    public void setNumberOfEmployees(String numberOfEmployees) {
         this.numberOfEmployees = numberOfEmployees;
     }
 }
